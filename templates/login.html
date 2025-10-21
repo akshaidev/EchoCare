@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EchoCare • Sign in</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="onboard">
+  <div class="onboard-card">
+    <h2>Hello! I’m <span class="brand">EchoCare</span> 💬</h2>
+    <p class="subtitle">Let’s set things up first…</p>
+
+    <form id="auth-form">
+      <label>Username</label>
+      <input type="text" id="username" placeholder="you@example.com" autocomplete="username" />
+
+      <label>Password</label>
+      <input type="password" id="password" placeholder="********" autocomplete="current-password" />
+
+      <button type="button" id="btn-login">Continue</button>
+      <p id="msg"></p>
+      <small>
+        Don’t have an account?
+        <a href="#" id="toggle-mode">Create one</a>
+      </small>
+    </form>
+  </div>
+
+    <div id="transition-overlay" class="fade-overlay">
+      <div class="fade-circle"></div>
+    </div>
+
+
+  <script src="/static/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EchoCare • Chat</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body class="chat-page fade-in">
+  <div class="sidebar top-left">
+    <div class="menu-header">
+      <div class="logo">EC</div>
+      <button id="logout">⇦</button>
+    </div>
+    <button id="new-chat">＋ New Chat</button>
+    <div id="chat-list"></div>
+  </div>
+
+  <div class="chat-main">
+    <div id="welcome" class="chat-welcome">
+      <h2 id="greeting">How’s it going?</h2>
+      <p class="sub">What’s on your mind?</p>
+    </div>
+
+    <div id="chat-box" class="chat-box"></div>
+
+    <div class="input-bar">
+      <input type="text" id="user-input" placeholder="What's on your mind?" autocomplete="off" />
+      <button id="send-btn">↑</button>
+    </div>
+  </div>
+
+  <script src="/static/chat.js"></script>
+</body>
+</html>
